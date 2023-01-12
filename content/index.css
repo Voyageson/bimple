@@ -1,0 +1,9 @@
+.bili-feed4 > :not(.bili-header),
+
+.bili-header__bar ~ div,
+
+.bili-header__bar > :not(.center-search-container),
+
+.center-search-container .trending {
+    display: none !important;
+}

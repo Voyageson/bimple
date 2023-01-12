@@ -1,0 +1,9 @@
+/* .right-container-inner.scroll-sticky > :not(:first-child, #multi_page), */
+.right-container-inner > :not(:first-child, #multi_page),
+.left-container-under-player > :not(:first-child),
+
+#biliMainHeader,
+
+.bpx-player-ending-related {
+    display: none !important;
+}
