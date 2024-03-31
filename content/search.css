@@ -1,3 +1,4 @@
+/* 隐藏搜索栏中的热点推荐 */
 .trending {
     display: none !important;
 }

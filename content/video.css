@@ -1,9 +1,15 @@
-/* .right-container-inner.scroll-sticky > :not(:first-child, #multi_page), */
-.right-container-inner > :not(:first-child, #multi_page),
-.left-container-under-player > :not(:first-child),
-
+/* 隐藏header */
 #biliMainHeader,
 
-.bpx-player-ending-related {
+/* 隐藏右侧边栏中的推荐信息 */
+.right-container-inner > :not(:first-child, :has(#multi_page)),
+#multi_page ~ *,
+
+/* 隐藏评论 */
+.left-container-under-player > :not(:first-child),
+
+/* 隐藏播放完成后出现的推荐信息 */
+.bpx-player-ending-related
+{
     display: none !important;
 }

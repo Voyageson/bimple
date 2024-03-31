@@ -1,26 +1,25 @@
 {
     "manifest_version": 3,
     "name": "bimple",
-    "description": "",
-    "version": "1.0",
+    "description": "simplify",
+    "version": "1.1",
     "action": {
       "default_popup": "popup.html"
     },
     "content_scripts": [
         {
-            "matches": ["https://*.bilibili.com/"],
+            "matches": ["https://*.bilibili.com/*"],
             "js": ["content/index.js"],
             "css": ["content/index.css"]
         },
         {
             "matches": ["https://*.bilibili.com/video/*"],
-            "js": ["content/video.js"],
-            "css": ["content/video.css", "content/del_header.css"]
+            "css": ["content/video.css"]
             
         },
         {
             "matches": ["https://search.bilibili.com/*"],
-            "css": ["content/search.css", "content/del_header.css"]
+            "css": ["content/search.css"]
             
         }
     ]

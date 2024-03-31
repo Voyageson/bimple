@@ -1,9 +1,16 @@
+/* simplify bilibili index */
+/* 隐藏推荐内容 */
 .bili-feed4 > :not(.bili-header),
 
-.bili-header__bar ~ div,
+/* 隐藏分区信息 */
+.bili-header > :not(.bili-header__bar, .bili-header__banner),
 
-.bili-header__bar > :not(.center-search-container),
+/* 隐藏header左侧 */
+.left-entry,
 
-.center-search-container .trending {
+/* 隐藏搜索热点 */
+.center-search-container .trending
+
+{
     display: none !important;
 }
